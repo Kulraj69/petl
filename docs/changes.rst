@@ -4,6 +4,9 @@ Changes
 Version 1.8.0
 -------------
 
+* Resolve negative field indexes in ``clampvalues()`` against the header,
+  so surplus values in longer rows do not change the selected field.
+
 * Add ``petl.config.temp_dir`` to set the directory for on-disk sorts and
   generator-backed ``fromdicts()`` caches. :issue:`389`.
 
